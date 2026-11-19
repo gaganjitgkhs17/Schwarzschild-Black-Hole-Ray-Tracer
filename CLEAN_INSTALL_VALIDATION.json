@@ -1,0 +1,65 @@
+{
+  "status": "PASS_CLEAN_INSTALL",
+  "archive": "C:\\Users\\gagan\\PycharmProjects\\BlackHoleRayTracer\\releases\\SchwarzschildRayTracer_v1.0rc1.zip",
+  "checks": [
+    {
+      "name": "Release ZIP exists",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Expected standalone files",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "No legacy or SciPy source in package",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Complete SHA256 manifest",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "SHA256 hashes valid",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded FULL fixed-grid parity gate",
+      "passed": true,
+      "details": "29/29 recorded checks"
+    },
+    {
+      "name": "Packaged smoke tests pass",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "PNG/NPZ/JSON produced",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Output shapes",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Finite and valid output",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "48px regression brightness",
+      "passed": true,
+      "details": "52.0340669609 vs 52.0340669609"
+    }
+  ],
+  "archive_sha256": "6bf804190c9ef5d3cd4ef3bb6164f1b2f2669b9477ae29a0ee89746a6ace16a3",
+  "reproduced_brightness_48": 52.03406696088902,
+  "documented_brightness_300": 51.1497137695,
+  "runtime_python": "3.14.5"
+}

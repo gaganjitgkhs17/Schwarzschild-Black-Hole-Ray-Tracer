@@ -1,0 +1,167 @@
+{
+  "release": "1.0rc1",
+  "built_utc": "2026-11-19T16:38:04.237216+00:00",
+  "audit": {
+    "version": "0.10T",
+    "created_utc": "2026-11-19T16:38:04.105845+00:00",
+    "mode": "full",
+    "status": "PASS_FIXED_GRID_REGRESSION",
+    "passed": 29,
+    "total": 29,
+    "reference_npz": null,
+    "checks": [
+      {
+        "test": "Direct dependencies: bh_engine_v010s.py",
+        "passed": true,
+        "detail": "no SciPy/legacy imports"
+      },
+      {
+        "test": "Direct dependencies: render_v010s.py",
+        "passed": true,
+        "detail": "no SciPy/legacy imports"
+      },
+      {
+        "test": "Hit/miss + radius: camera grid",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-07"
+      },
+      {
+        "test": "Disk intersection angle: camera grid",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-07"
+      },
+      {
+        "test": "Linear RGB: camera grid",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-07"
+      },
+      {
+        "test": "Hit flags: camera grid",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Hit/miss + radius: difficult pixel region",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-07"
+      },
+      {
+        "test": "Disk intersection angle: difficult pixel region",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-07"
+      },
+      {
+        "test": "Linear RGB: difficult pixel region",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-07"
+      },
+      {
+        "test": "Hit flags: difficult pixel region",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Camera impact parameter",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-12"
+      },
+      {
+        "test": "Axial angular momentum",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-12"
+      },
+      {
+        "test": "Relativistic shift",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-12"
+      },
+      {
+        "test": "Invalid step rejected: -0.008",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Invalid step rejected: 0",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Invalid step rejected: nan",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Standalone batch-size independence: RGB",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=0.0e+00"
+      },
+      {
+        "test": "Standalone batch-size independence: hits",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=0.0e+00"
+      },
+      {
+        "test": "48px linear RGB parity",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-08"
+      },
+      {
+        "test": "48px hit fraction parity",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=0.0e+00"
+      },
+      {
+        "test": "48px tone-map parity",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-08"
+      },
+      {
+        "test": "48px integrated brightness parity",
+        "passed": true,
+        "detail": "standalone=52.0340669609, legacy=52.0340669609"
+      },
+      {
+        "test": "48px output finite / nonnegative",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "300px linear RGB parity",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-08"
+      },
+      {
+        "test": "300px hit fraction parity",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=0.0e+00"
+      },
+      {
+        "test": "300px tone-map parity",
+        "passed": true,
+        "detail": "max difference=0.000e+00; tol=1.0e-08"
+      },
+      {
+        "test": "300px integrated brightness parity",
+        "passed": true,
+        "detail": "standalone=51.1497137695, legacy=51.1497137695"
+      },
+      {
+        "test": "300px output finite / nonnegative",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "300px published regression brightness",
+        "passed": true,
+        "detail": "observed=51.1497137695; expected=51.1497137695"
+      }
+    ],
+    "limitations": [
+      "Checks a fixed sampling grid, not continuum image convergence.",
+      "Direct-import AST scan is not a complete dependency inventory.",
+      "Finite ray and disk-event cases do not exhaust all edge cases.",
+      "Colour and emissivity remain illustrative, not calibrated spectra."
+    ]
+  },
+  "claim": "Full fixed-grid parity passed; continuum convergence not established"
+}
